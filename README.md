@@ -1,9 +1,11 @@
 # DockerChannel
 
-This repository allows you to test covert channels implemented on containers.
-It is possible to use and evaluate already implemented channels, as well as create new channels.
+DockerChannel is a Python framework that allows to test covert channels among containers.
 
-This repository represent an outcome of a joint research by [CNR-IMATI](https://imati.cnr.it) and [CNR-IEIIT](https://www.ieiit.cnr.it).
+In particular, it contains 5 different covert channels that exploit difference resources "poorly" isolated when deploying containers via Docker, i.e., the free memory, the CPU load, the number of processes, the number of TCP sockets, and the number of inodes.
+DockerChannel allows to use and evaluate the already implemented channels, as well as create new channels.
+
+This repository represents an outcome of a joint research by [CNR-IMATI](https://imati.cnr.it) and [CNR-IEIIT](https://www.ieiit.cnr.it).
 In case of exploitation for research purposes, please mention the following paper.
 
 *TO BE ADDED ONCE THE PAPER IS ACCEPTED*
@@ -69,7 +71,7 @@ docker run \
 	-e allocation_time_s=5 \
 	-e allocation_factor=0.8 \
 	-e allocation_amount=500 \
-	-e message=ciao \
+	-e message=secret \
 	-e verbose=1 \
 	-t dockerchannel
 ```
@@ -90,7 +92,7 @@ docker run \
 
 **CPU**
 
-In this case, the `allocation_amount` variable is expressed in terms of operations to execute for each round, while the `threshold` variable is expressed in terms of increase of percentage of CPU occupied by the sender.
+In this case, the `allocation_amount` variable is expressed in terms of operations to execute for each round, while the `threshold` variable is expressed in terms of a percentage increase of the CPU.
 For further information, please refer to the scientific paper mentioned above.
 
 * sender:
@@ -103,7 +105,7 @@ docker run \
 	-e allocation_time_s=5 \
 	-e allocation_factor=0.8 \
 	-e allocation_amount=1000000 \
-	-e message=ciao \
+	-e message=secret \
 	-e verbose=1 \
 	-t dockerchannel
 ```
@@ -137,7 +139,7 @@ docker run \
 	-e allocation_time_s=5 \
 	-e allocation_factor=0.8 \
 	-e allocation_amount=1000 \
-	-e message=ciao \
+	-e message=secret \
 	-e verbose=1 \
 	-t dockerchannel
 ```
@@ -171,7 +173,7 @@ docker run \
 	-e allocation_time_s=5 \
 	-e allocation_factor=0.8 \
 	-e allocation_amount=500 \
-	-e message=ciao \
+	-e message=secret \
 	-e verbose=1 \
 	-t dockerchannel
 ```
@@ -205,7 +207,7 @@ docker run \
 	-e allocation_time_s=5 \
 	-e allocation_factor=0.8 \
 	-e allocation_amount=10 \
-	-e message=ciao \
+	-e message=secret \
 	-e verbose=1 \
 	-t dockerchannel
 ```
@@ -226,7 +228,7 @@ docker run \
 
 #### Manual execution by command line ####
 
-It's possible to launch the following command to get information on the syntax to use for a manual execution.
+It is also possible to launch the following command to get information on the syntax to use for executing DockerChannel via CLI.
 Required parameters and their reference is similar (although not exactly the same; see, i.e., the `adjust_timeout_allocation` parameter) to the one reported in the table above for the Docker case.
 ```
 python3 CovertChannel.py -h
@@ -261,7 +263,7 @@ For real samples, see the files under the `channels` folder.
 
 In case the installation of specific libraries is required, properly update the `requirements.txt` file.
 
-If you intend to implement a new channel, open a merge request to include it in this repository and to include you to the contributors list.
+If you intend to implement a new channel, open a merge request to include it in this repository and you to the contributors list.
 
 ### Credits ###
 
