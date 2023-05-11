@@ -13,10 +13,10 @@ PORTS = range(1024, 65535)
 class CovertChannelType(utils.CovertChannelTypeTemplate):
 	# the resource type
 	resource_type = utils.ResourceType.NORMAL
-	# given an input bit b, binds to n sockets for t seconds
-	def allocate_channel(b, n, t):
-		if b == 0:
-			time.sleep(t)
+	# given an input bit_to_transmit, binds to allocation_amount sockets for period seconds
+	def allocate_channel(bit_to_transmit, allocation_amount, period):
+		if bit_to_transmit == 0:
+			time.sleep(period)
 			return
 		sockets = []
 		for port in PORTS:
@@ -24,9 +24,9 @@ class CovertChannelType(utils.CovertChannelTypeTemplate):
 			try:
 				s.bind((BIND_HOST, port))
 				sockets.append(s)
-				if len(sockets) == n: break
+				if len(sockets) == allocation_amount: break
 			except: pass
-		time.sleep(t)
+		time.sleep(period)
 		for s in sockets: s.close()
 	# returns the number of opened TCP sockets
 	def get_channel_resource(config):

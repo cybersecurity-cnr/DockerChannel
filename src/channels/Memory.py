@@ -17,13 +17,13 @@ class CovertChannelType(utils.CovertChannelTypeTemplate):
 		fields = ['allocation_amount', 'threshold']
 		for f in fields:
 			if not self.config.get(f) is None: self.config[f] = mbtob(self.config.get(f))
-	# starting from b value of the current byte, allocates n bytes for t seconds
-	def allocate_channel(b, n, t):
-		if b == 0:
-			time.sleep(t)
+	# starting from bit_to_transmit value of the current byte, allocates allocation_amount bytes for period seconds
+	def allocate_channel(bit_to_transmit, allocation_amount, period):
+		if bit_to_transmit == 0:
+			time.sleep(period)
 			return
-		tmp = 'a' * int(n)
-		time.sleep(t)
+		tmp = 'a' * int(allocation_amount)
+		time.sleep(period)
 		del tmp
 	# returns the free memory, in bytes
 	def get_channel_resource(config):
