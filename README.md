@@ -14,11 +14,11 @@ In case of exploitation for research purposes, please mention the following pape
 
 * Clone the repository:
 ```
-git clone https://github.com/cybersecurity-cnr/dockerchannel
+git clone https://github.com/cybersecurity-cnr/DockerChannel
 ```
 * `cd` into the cloned repository source files:
 ```
-cd dockerchannel/src
+cd DockerChannel/src
 ```
 * Build the Docker image:
 ```
