@@ -58,7 +58,7 @@ class CovertChannelTypeTemplate:
 			read_value = 1 if read_one else 0
 			if self.config.get('verbose'): print('Received bit: {}'.format(read_value))
 			received_bits.append(read_value)
-			if len(received_bits) >= BITS_PER_CHARACTER:
+			if (len(received_bits) % BITS_PER_CHARACTER) == 0:
 				if received_bits[-BITS_PER_CHARACTER:] == [0] * BITS_PER_CHARACTER: break
 			sleepuntilnextsync(self.sync, self.config.get('allocation_time_s'))
 		print('Full text received: \'{}\''.format(convertfrombitsequence(received_bits).decode()[:-1]))
