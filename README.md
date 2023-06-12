@@ -10,6 +10,10 @@ In case of exploitation for research purposes, please mention the following pape
 
 *TO BE ADDED ONCE THE PAPER IS ACCEPTED*
 
+### Sample videos ###
+
+[![Cpu execution demo]()](video/Cpu.mov)
+
 ### Installation ###
 
 * Clone the repository:
