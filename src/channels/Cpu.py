@@ -16,9 +16,8 @@ class CovertChannelType(utils.CovertChannelTypeTemplate):
 			return
 		tmp = 0
 		begin_time = utils.gettime()
-		while True:
-			for i in range(0, int(allocation_amount)): tmp += i
-			elapsed_time = utils.gettime() - begin_time
-			if elapsed_time >= period: break
+		for i in range(0, int(allocation_amount)): tmp += i
+		elapsed_time = utils.gettime() - begin_time
+		time.sleep(period - elapsed_time)
 	# returns the cpu usage, in percentage
 	def get_channel_resource(config): return psutil.cpu_percent(config.get('allocation_time_s')-1)
