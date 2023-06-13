@@ -240,7 +240,7 @@ Live example of DockerChannel running the **Memory** covert channel:
 
 https://github.com/cybersecurity-cnr/DockerChannel/assets/26620949/95da733e-b4e7-43c1-93ef-7fee74045e56
 
-Live example of DockerChannel running the **CPU** covert channel:
+Live example of DockerChannel running the **Cpu** covert channel:
 
 https://github.com/cybersecurity-cnr/DockerChannel/assets/26620949/526d614f-699f-4536-b7fb-31d6c6f540df
 
