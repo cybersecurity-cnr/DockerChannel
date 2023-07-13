@@ -31,7 +31,7 @@ docker save dockerchannel:latest|gzip > dockerchannel.tar.gz
 
 ### Usage ###
 
-Although a Docker execution is suggested, it's possible to run the program also manually.
+Although a Docker execution is suggested, it is possible to run the program also manually.
 For the Docker case, some environment variables have to be configured.
 Instead, for the manual case, all variables can be provided in input to the program as arguments.
 In both the cases, it is needed to run two separate instances of the program: one for the sender, one for the receiver.
