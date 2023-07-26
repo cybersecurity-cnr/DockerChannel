@@ -238,12 +238,11 @@ python3 CovertChannel.py -h
 
 Live example of DockerChannel running the **Memory** covert channel:
 
-https://github.com/cybersecurity-cnr/DockerChannel/assets/26620949/95da733e-b4e7-43c1-93ef-7fee74045e56
+https://github.com/cybersecurity-cnr/DockerChannel/assets/26620949/a2329b03-448f-4dad-ad75-85b8120cfeae
 
 Live example of DockerChannel running the **Cpu** covert channel:
 
-https://github.com/cybersecurity-cnr/DockerChannel/assets/26620949/526d614f-699f-4536-b7fb-31d6c6f540df
-
+https://github.com/cybersecurity-cnr/DockerChannel/assets/26620949/3763d895-1703-48ed-96fd-3954eb4092d6
 
 ### Implementation of a new channel ###
 
