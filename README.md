@@ -24,7 +24,7 @@ abstract = {DockerChannel is a software suite for investigating possible informa
 }
 ```
 
-The open access version of the manuiscript can be retrieved from ScienceDirect at this [link](https://www.sciencedirect.com/science/article/pii/S2352711023002728).
+The open access version of the manuiscript can be retrieved from ScienceDirect at [this link](https://www.sciencedirect.com/science/article/pii/S2352711023002728).
 
 ### Installation ###
 
