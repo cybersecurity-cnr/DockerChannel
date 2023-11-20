@@ -23,7 +23,8 @@ keywords = {Container security, Cybersecurity, Data leakage},
 abstract = {DockerChannel is a software suite for investigating possible information leakages of Docker containers. Its main scope is to support developers to fully assess the impact of the “loose” isolation of statistics provided by the container engine. It can also help researchers to investigate new attacks leveraging the orchestration of malicious containers. DockerChannel is built around an extensible Python class abstracting the creation of the covert communication mechanism and it can be used both in a general-purpose manner or “bundled” within pre-existing containers, e.g., to check leakages in real cloud-native deployments.}
 }
 ```
-[ScienceDirect link](https://www.sciencedirect.com/science/article/pii/S2352711023002728)
+
+The open access version of the manuiscript can be retrieved from ScienceDirect at this [link](https://www.sciencedirect.com/science/article/pii/S2352711023002728).
 
 ### Installation ###
 
