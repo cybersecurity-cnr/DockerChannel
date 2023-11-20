@@ -6,9 +6,24 @@ In particular, it contains 5 different covert channels that exploit difference r
 DockerChannel allows to use and evaluate the already implemented channels, as well as create new channels.
 
 This repository represents an outcome of a joint research by [CNR-IMATI](https://imati.cnr.it) and [CNR-IEIIT](https://www.ieiit.cnr.it).
-In case of exploitation for research purposes, please mention the following paper.
+In case of exploitation for research purposes, please mention the following research paper.
 
-*TO BE ADDED ONCE THE PAPER IS ACCEPTED*
+```
+@article{cambiaso2023,
+title = {DockerChannel: A framework for evaluating information leakages of Docker containers},
+journal = {SoftwareX},
+volume = {24},
+pages = {101576},
+year = {2023},
+issn = {2352-7110},
+doi = {https://doi.org/10.1016/j.softx.2023.101576},
+url = {https://www.sciencedirect.com/science/article/pii/S2352711023002728},
+author = {Enrico Cambiaso and Luca Caviglione and Marco Zuppelli},
+keywords = {Container security, Cybersecurity, Data leakage},
+abstract = {DockerChannel is a software suite for investigating possible information leakages of Docker containers. Its main scope is to support developers to fully assess the impact of the “loose” isolation of statistics provided by the container engine. It can also help researchers to investigate new attacks leveraging the orchestration of malicious containers. DockerChannel is built around an extensible Python class abstracting the creation of the covert communication mechanism and it can be used both in a general-purpose manner or “bundled” within pre-existing containers, e.g., to check leakages in real cloud-native deployments.}
+}
+```
+[ScienceDirect link](https://www.sciencedirect.com/science/article/pii/S2352711023002728)
 
 ### Installation ###
 
