@@ -9,7 +9,7 @@ This repository represents an outcome of a joint research by [CNR-IMATI](https:/
 In case of exploitation for research purposes, please mention the following research paper.
 
 ```
-@article{cambiaso2023,
+@article{dockerchannel2023,
 title = {DockerChannel: A framework for evaluating information leakages of Docker containers},
 journal = {SoftwareX},
 volume = {24},
