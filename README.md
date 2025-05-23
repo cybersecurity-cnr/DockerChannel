@@ -2,7 +2,7 @@
 
 DockerChannel is a Python framework that allows to test covert channels among containers.
 
-In particular, it contains 5 different covert channels that exploit difference resources "poorly" isolated when deploying containers via Docker, i.e., the free memory, the CPU load, the number of processes, the number of TCP sockets, and the number of inodes.
+In particular, it contains 5 different covert channels that exploit different resources "poorly" isolated when deploying containers via Docker, i.e., the free memory, the CPU load, the number of processes, the number of TCP sockets, and the number of inodes.
 DockerChannel allows to use and evaluate the already implemented channels, as well as create new channels.
 
 This repository represents an outcome of a joint research by [CNR-IMATI](https://imati.cnr.it) and [CNR-IEIIT](https://www.ieiit.cnr.it).
